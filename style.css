@@ -1,0 +1,67 @@
+:root{
+    --gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+    --paleBlue: hsl(243, 100%, 93%);
+    --grayishBlue: hsl(229, 7%, 55%);
+    --darkBlue: hsl(228, 56%, 26%);
+    --veryDarkBlue: hsl(229, 57%, 11%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./images/bg-mobile.png');
+}
+
+main{
+    width: 90%;
+}
+
+.fylo{
+    background-color: var(--darkBlue);
+    width: 95%;
+    padding: 2rem 8rem 2rem 3rem;
+    margin: auto;
+    border-radius: 0.5rem 5rem 0.5rem 0.5rem;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0 0;
+}
+
+.icons div{
+    padding: 0.4rem;
+    background-color: var(--veryDarkBlue);
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.storage{
+    background-color: var(--darkBlue);
+    margin: 1rem auto;
+    width: 95%;
+    padding: 1rem 1rem 5rem 2rem;
+    color: var(--paleBlue);
+}
+
+.left{
+    padding: 2rem;
+    background-color: white;
+    width: 10rem;
+    border-radius: 1rem;
+    margin: -4rem auto;
+}
