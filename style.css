@@ -25,7 +25,7 @@ body{
 }
 
 main{
-    width: 90%;
+    max-width: 30rem;
 }
 
 .fylo{
@@ -111,11 +111,75 @@ main{
     background-color: white;
     width: 10.3rem;
     border-radius: 1rem;
-    margin: -3rem auto;
+    position: absolute;
+    transform: translateY(50%);
     text-transform: uppercase;
     font-weight: 500;
+    bottom: 8rem;
 }
 
 .number{
     font-size: 2rem;
 }
+
+@media only screen and (min-width:1000px) {
+    body{
+        background-image: url(./images/bg-desktop.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    main{
+        display: flex;
+        max-width: none;        
+        width: 70rem;
+        gap: 1rem;       
+    }
+
+    .fylo{
+        width: 30%;
+        padding: 1rem 8rem 1rem 3rem;
+    }
+
+    .storage{
+        width: 50%;
+        padding: 0;        
+        z-index: -2;       
+    }
+
+    .tittle{
+        margin: 0 0 1rem;
+        padding: 0 0 0 1.2rem;
+    }
+
+    .left{
+        position: absolute;
+        height: 4rem;        
+        right: 17rem;
+        margin: -1rem auto;
+        display: flex;
+        align-items: center;
+        transform: translate(30%,-600%);
+    }
+
+    .left::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform: translate(0%, 30%);
+        margin-left: -1.5rem;
+        border-width: 2rem;
+        border-style: solid;
+        border-color: white white transparent transparent;
+        z-index: -1;
+      }
+}
+
+@media (min-width:1600px){
+    .left{
+        transform: translate(-65%,-600%);
+    }
+    
+}
+
