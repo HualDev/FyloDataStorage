@@ -1,9 +1,12 @@
 :root{
-    --gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
+    --gradient1: hsl(6, 100%, 80%);
+    --gradient2: hsl(335, 100%, 65%);
     --paleBlue: hsl(243, 100%, 93%);
     --grayishBlue: hsl(229, 7%, 55%);
     --darkBlue: hsl(228, 56%, 26%);
     --veryDarkBlue: hsl(229, 57%, 11%);
+    --left:50;
+    --gradient: background-image
 }
 
 *{
@@ -54,14 +57,65 @@ main{
     background-color: var(--darkBlue);
     margin: 1rem auto;
     width: 95%;
-    padding: 1rem 1rem 5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     color: var(--paleBlue);
+    padding: 3rem 0;
+    border-radius: 1rem;
+}
+
+.tittle{
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+.range{
+    width: 90%;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0.45rem 0.1rem;
+    border-radius: 1rem;
+    background-color: var(--veryDarkBlue);
+}
+
+.percent{
+    width: 70%;
+    height: 0.90rem;
+    border-radius: 1rem;
+    background-image: linear-gradient(to right,var(--gradient1),var(--gradient2));
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 0 0.14rem 0 0;
+}
+
+.circle{
+    width: 0.6rem;
+    height: 0.6rem;    
+    border-radius: 50%;
+    background-color: white;    
+}
+
+.values{
+    margin: 0.5rem auto 0;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
 }
 
 .left{
-    padding: 2rem;
+    padding: 1.3rem;
     background-color: white;
-    width: 10rem;
+    width: 10.3rem;
     border-radius: 1rem;
-    margin: -4rem auto;
+    margin: -3rem auto;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.number{
+    font-size: 2rem;
 }
